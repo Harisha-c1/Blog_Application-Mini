@@ -1,0 +1,20 @@
+
+
+    <div class="login-container">
+        <h1>Login</h1>
+        <form ng-submit="loginUser()">
+            <label for="username">Username</label>
+            <input type="text" id="username" ng-model="user.username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" ng-model="user.password" required>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <p ng-if="successMessage" class="success">{{ successMessage }}</p>
+        <p ng-if="errorMessage" class="error">{{ errorMessage }}</p>
+    </div>
+
+   
+

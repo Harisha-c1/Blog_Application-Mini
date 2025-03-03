@@ -1,0 +1,21 @@
+<div class="container">
+    <h1>Register</h1>
+    <form ng-submit="registerUser()">
+        <label for="username">Username</label>
+        <input type="text" id="username" ng-model="user.username" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" ng-model="user.password" required>
+
+        <label for="role">Role</label>
+        <select id="role" ng-model="user.role" required>
+            <option value="User">User</option>
+            <option value="Author">Author</option>
+        </select>
+
+        <button type="submit">Register</button>
+    </form>
+    <p ng-if="successMessage">{{ successMessage }}</p>
+    <p ng-if="errorMessage">{{ errorMessage }}</p>
+</div>
+

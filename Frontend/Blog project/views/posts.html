@@ -1,0 +1,27 @@
+
+    <div class="posts-container"  ng-controller="PostsController">
+        <h2>All Posts</h2>
+    
+        <!-- Create Post button (Only for Authors) -->
+        <button ng-if="role === 'AUTHOR'" ng-click="redirectToCreatePost()">Create Post</button>
+    
+        <p ng-if="loading">Loading posts...</p>  
+        <div class="admin-panel" ng-if="role === 'ADMIN'">
+            <h3>Admin Panel</h3>
+            <p>Manage all posts here.</p>
+        </div>
+        <ul >
+            <li ng-repeat="post in posts">
+                <a href="#!/post/{{ post.id }}">{{ post.title }}</a>  
+                
+                <!-- Delete button (Only for Admins) -->
+                <button ng-if="role === 'ADMIN'" ng-click="deletePost(post.id)">Delete</button>
+            </li>
+        </ul>
+    </div>
+    
+    
+
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+

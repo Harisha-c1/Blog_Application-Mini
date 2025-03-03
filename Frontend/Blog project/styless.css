@@ -1,0 +1,394 @@
+.container {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 600px;
+    display: inline-block;
+    min-height: 80vh;
+    
+}
+h1{
+    color: greenyellow;
+}
+.full-width{
+    text-align: center;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    font-family: 'Arial', sans-serif;
+    background: url('/assets/image2.png') no-repeat center center fixed;
+    background-size: cover;
+    display:inline;
+    background-attachment: none;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+.welcome{
+    font-size:50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, select {
+    padding: 8px;
+    margin-top: 5px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color:greenyellow;
+    color:orangered;
+}
+
+
+
+/* Login Page */
+.login-container {
+    width: 300px;
+    margin: 30px auto;
+    padding: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-container label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border: 2px solid yellowgreen;
+}
+
+.login-container button {
+    
+    margin: auto;
+    width: 40%;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #45a049;
+}
+
+.success {
+    color: green;
+    text-align: center;
+}
+
+.error {
+    color: red;
+    text-align: center;
+}
+
+/* Posts Page */
+.posts-container {
+    max-width: 900px;
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+    max-height: 500px; 
+    overflow-y: auto;
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+   
+}
+.posts-container p {
+    color: orangered;
+    font-weight: bold;
+}
+
+.posts-container h2 {
+    font-size: 50px;
+    color: greenyellow;
+    text-align:center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.admin-panel {
+    background: rgba(55, 161, 39, 0.2);
+    padding: 15px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color:gold;
+    font-weight: bold;
+}
+
+.posts-container ul {
+    color: greenyellow;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 10px;
+   
+}
+.posts-container ul li {
+    background: rgba(255, 255, 255, 0.1); 
+    padding: 15px;
+    margin-bottom: 10px; 
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.posts-container ul li a {
+    
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.posts-container ul li a:hover {
+    text-decoration: underline;
+}
+
+.posts-container a{
+    color: orangered;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+
+
+/* Manage Posts Section */
+.author-posts-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Transparent background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+}
+
+/* Heading */
+.author-posts-container h2 {
+    text-align: center;
+    color: #FFD700;
+}
+
+/* Input Fields */
+.author-posts-container input, 
+.author-posts-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Buttons */
+.author-posts-container button {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: px;
+    margin-right: 10px;
+}
+
+
+
+/* Post List */
+.author-posts-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.author-posts-container li {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    
+}
+
+/* Post Links */
+.author-posts-container a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #FFD700;
+    flex: 1;
+    font-weight: bold;
+}
+
+.author-posts-container a:hover {
+    text-decoration: underline;
+}
+
+/* Edit Form */
+.edit-post-container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.edit-post-container h3 {
+    color: #FFD700;
+    text-align: center;
+}
+
+
+
+
+footer {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+header {
+    background: rgba(0, 0, 0, 0.);
+    padding: 1px;
+    text-align: center;
+    font-size: 15px;
+}
+.register{
+    color:#FFD700;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+}
+.register:hover{
+    text-decoration:underline;
+}
+.login{
+    color:#FFD700;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+}
+.login:hover{
+    text-decoration:underline;
+}
+/* Post Detail Container */
+.post-detail-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    color: #fff;
+}
+
+/* Post Title */
+.post-detail-container h2 {
+    text-align: center;
+    color: #FFD700;
+    margin-bottom: 10px;
+}
+
+/* Post Content */
+.post-detail-container p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Author & Created At */
+.post-meta {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+/* Comments Section */
+.comments-section {
+    margin-top: 20px;
+}
+
+.comments-section h3 {
+    color: #FFD700;
+    margin-bottom: 10px;
+}
+
+.comments-list {
+    list-style: none;
+    padding: 0;
+}
+
+.comments-list li {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+/* Comment Input */
+.comment-input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Submit Button */
+.comment-btn {
+    background: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.comment-btn:hover {
+    background: #0056b3;
+}

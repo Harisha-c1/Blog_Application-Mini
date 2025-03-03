@@ -1,0 +1,18 @@
+
+<div class="post-detail-container" ng-controller="PostDetailController">
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.content }}</p>
+
+    <p class="post-meta">Author: {{ post.author }} | Created At: {{ post.createdAt | date: 'medium' }}</p>
+    <div class="comments-section">
+    <h3>Comments</h3>
+    <ul class="comments-list">
+        <li ng-repeat="comment in post.comments">
+            <strong>{{ comment.author }}:</strong> 
+            {{ comment.text || 'No text available'}}
+        </li>
+    </ul>
+     </div>
+    <textarea class="comment-input" ng-model="commentText" placeholder="Add a comment..."></textarea>
+    <button class="comment-btn" ng-click="addComment()">Submit</button>
+</div>
